@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Flutter</string>
+    <string name="email_adress">Email Adress</string>
+    <string name="first_name">First Name</string>
+    <string name="second_name">Second Name</string>
+    <string name="password">Password</string>
+    <string name="create">CREATE</string>
+    <string name="create_account">Create Account</string>
+</resources>

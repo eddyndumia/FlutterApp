@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" android:layout_gravity="center" android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/textCreateAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        android:fontFamily="@font/roboto_light"
+        android:gravity="center"
+        android:text="@string/create_account"
+        android:textColor="#212121"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/userFirstName"
+        android:layout_width="253dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="152dp"
+        android:gravity="center"
+        android:hint="@string/first_name"
+        android:textAlignment="textStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="RtlCompat" />
+
+    <EditText
+        android:id="@+id/emailaddress"
+        android:layout_width="253dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:hint="@string/email_adress"
+        android:inputType="textEmailAddress"
+        android:textAlignment="textStart"
+        app:layout_constraintEnd_toEndOf="@+id/userSecondName"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/userSecondName"
+        app:layout_constraintTop_toBottomOf="@+id/userSecondName"
+        tools:ignore="RtlCompat" />
+
+    <EditText
+        android:id="@+id/userSecondName"
+        android:layout_width="253dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:hint="@string/second_name"
+        android:textAlignment="textStart"
+        app:layout_constraintEnd_toEndOf="@+id/userFirstName"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/userFirstName"
+        app:layout_constraintTop_toBottomOf="@+id/userFirstName"
+        tools:ignore="RtlCompat" />
+
+    <EditText
+        android:id="@+id/newPassword"
+        android:layout_width="253dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:textAlignment="textStart"
+        app:layout_constraintEnd_toEndOf="@+id/emailaddress"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/emailaddress"
+        app:layout_constraintTop_toBottomOf="@+id/emailaddress"
+        tools:ignore="RtlCompat" />
+
+    <Button
+        android:id="@+id/btnCreateAccount"
+        android:layout_width="96dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/create"
+        app:layout_constraintEnd_toEndOf="@+id/newPassword"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/newPassword"
+        app:layout_constraintTop_toBottomOf="@+id/newPassword" />
+</androidx.constraintlayout.widget.ConstraintLayout>
